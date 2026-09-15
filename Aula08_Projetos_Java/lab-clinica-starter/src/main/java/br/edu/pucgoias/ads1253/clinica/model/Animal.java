@@ -1,37 +1,44 @@
 package br.edu.pucgoias.ads1253.clinica.model;
 
+import jakarta.persistence.*;
+
 import java.time.LocalDate;
 
-/**
- * ETAPA 2 - Mapeamento da entidade Animal.
- *
- * Utilize a classe Tutor como referencia e complete o mapeamento:
- *  - anote a classe como entidade da tabela "animal";
- *  - declare o identificador com geracao automatica pelo banco;
- *  - mapeie nome (obrigatorio, 60), especie (obrigatoria, 40) e dataNascimento;
- *  - mapeie o lado "muitos" do relacionamento com Tutor, usando a coluna
- *    tutor_id como chave estrangeira e carregamento preguicoso (LAZY).
- */
+@Entity
+@Table(name = "animal")
 public class Animal {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(nullable = false, length = 100)
     private String nome;
 
+    @Column(nullable = false, length = 50)
     private String especie;
 
     private LocalDate dataNascimento;
 
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "tutor_id", nullable = false)
     private Tutor tutor;
 
     protected Animal() {
     }
 
-    public Animal(String nome, String especie, LocalDate dataNascimento) {
+    public Animal(String nome, String especie, LocalDate dataNascimento, Tutor tutor) {
         this.nome = nome;
         this.especie = especie;
         this.dataNascimento = dataNascimento;
+        this.tutor = tutor;
     }
+
+    public Animal(String nome, String especie, LocalDate dataNascimento) {
+    this.nome = nome;
+    this.especie = especie;
+    this.dataNascimento = dataNascimento;
+}
 
     public Long getId() {
         return id;
@@ -41,16 +48,8 @@ public class Animal {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
     public String getEspecie() {
         return especie;
-    }
-
-    public void setEspecie(String especie) {
-        this.especie = especie;
     }
 
     public LocalDate getDataNascimento() {
@@ -61,12 +60,19 @@ public class Animal {
         return tutor;
     }
 
-    public void setTutor(Tutor tutor) {
-        this.tutor = tutor;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    @Override
-    public String toString() {
-        return "Animal{id=%d, nome='%s', especie='%s'}".formatted(id, nome, especie);
+    public void setEspecie(String especie) {
+        this.especie = especie;
+    }
+
+    public void setDataNascimento(LocalDate dataNascimento) {
+        this.dataNascimento = dataNascimento;
+    }
+
+    public void setTutor(Tutor tutor) {
+        this.tutor = tutor;
     }
 }

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: br.edu.pucgoias.ads1253.clinica.service.ClinicaServiceTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.426 s -- in br.edu.pucgoias.ads1253.clinica.service.ClinicaServiceTest

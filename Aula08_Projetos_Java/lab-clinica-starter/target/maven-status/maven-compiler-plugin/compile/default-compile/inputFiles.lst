@@ -1,0 +1,9 @@
+/workspaces/Projeto-aula-8/Aula08_Projetos_Java/lab-clinica-starter/src/main/java/br/edu/pucgoias/ads1253/clinica/ClinicaApplication.java
+/workspaces/Projeto-aula-8/Aula08_Projetos_Java/lab-clinica-starter/src/main/java/br/edu/pucgoias/ads1253/clinica/model/Animal.java
+/workspaces/Projeto-aula-8/Aula08_Projetos_Java/lab-clinica-starter/src/main/java/br/edu/pucgoias/ads1253/clinica/model/Tutor.java
+/workspaces/Projeto-aula-8/Aula08_Projetos_Java/lab-clinica-starter/src/main/java/br/edu/pucgoias/ads1253/clinica/repository/AnimalRepository.java
+/workspaces/Projeto-aula-8/Aula08_Projetos_Java/lab-clinica-starter/src/main/java/br/edu/pucgoias/ads1253/clinica/repository/TutorRepository.java
+/workspaces/Projeto-aula-8/Aula08_Projetos_Java/lab-clinica-starter/src/main/java/br/edu/pucgoias/ads1253/clinica/service/ClinicaService.java
+/workspaces/Projeto-aula-8/Aula08_Projetos_Java/lab-clinica-starter/src/main/java/br/edu/pucgoias/ads1253/clinica/service/exception/CpfDuplicadoException.java
+/workspaces/Projeto-aula-8/Aula08_Projetos_Java/lab-clinica-starter/src/main/java/br/edu/pucgoias/ads1253/clinica/service/exception/RecursoNaoEncontradoException.java
+/workspaces/Projeto-aula-8/Aula08_Projetos_Java/lab-clinica-starter/src/main/java/br/edu/pucgoias/ads1253/clinica/service/exception/TutorComAnimaisException.java

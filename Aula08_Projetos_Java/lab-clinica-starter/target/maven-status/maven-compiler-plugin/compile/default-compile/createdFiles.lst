@@ -1,0 +1,9 @@
+br/edu/pucgoias/ads1253/clinica/service/exception/RecursoNaoEncontradoException.class
+br/edu/pucgoias/ads1253/clinica/service/exception/CpfDuplicadoException.class
+br/edu/pucgoias/ads1253/clinica/service/exception/TutorComAnimaisException.class
+br/edu/pucgoias/ads1253/clinica/model/Animal.class
+br/edu/pucgoias/ads1253/clinica/service/ClinicaService.class
+br/edu/pucgoias/ads1253/clinica/model/Tutor.class
+br/edu/pucgoias/ads1253/clinica/repository/TutorRepository.class
+br/edu/pucgoias/ads1253/clinica/repository/AnimalRepository.class
+br/edu/pucgoias/ads1253/clinica/ClinicaApplication.class
